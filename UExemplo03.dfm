@@ -14,7 +14,7 @@ object frmExemplo03: TfrmExemplo03
   object lbl_sinal: TLabel
     Left = 184
     Top = 32
-    Width = 14
+    Width = 33
     Height = 45
     Caption = '?'
   end
@@ -54,6 +54,7 @@ object frmExemplo03: TfrmExemplo03
     Height = 49
     Caption = '-'
     TabOrder = 3
+    OnClick = btn_menosClick
   end
   object btn_div: TButton
     Left = 255
@@ -62,6 +63,7 @@ object frmExemplo03: TfrmExemplo03
     Height = 49
     Caption = '/'
     TabOrder = 4
+    OnClick = btn_divClick
   end
   object btn_mult: TButton
     Left = 176
@@ -70,6 +72,7 @@ object frmExemplo03: TfrmExemplo03
     Height = 49
     Caption = 'x'
     TabOrder = 5
+    OnClick = btn_multClick
   end
   object btn_igual: TButton
     Left = 384
@@ -78,5 +81,6 @@ object frmExemplo03: TfrmExemplo03
     Height = 53
     Caption = '='
     TabOrder = 6
+    OnClick = btn_igualClick
   end
 end
