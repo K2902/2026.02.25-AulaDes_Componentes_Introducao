@@ -1,7 +1,7 @@
-object frmExemplo03: TfrmExemplo03
+object frmAtividade02: TfrmAtividade02
   Left = 0
   Top = 0
-  Caption = 'Exemplo 3'
+  Caption = 'Atividade 2'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -14,15 +14,15 @@ object frmExemplo03: TfrmExemplo03
   object lbl_sinal: TLabel
     Left = 184
     Top = 32
-    Width = 33
+    Width = 14
     Height = 45
     Caption = '?'
   end
   object lbl_resultado: TLabel
     Left = 472
     Top = 32
-    Width = 49
-    Height = 53
+    Width = 9
+    Height = 45
   end
   object edt_vlr_1: TEdit
     Left = 8

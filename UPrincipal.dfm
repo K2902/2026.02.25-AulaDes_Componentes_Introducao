@@ -39,13 +39,13 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 2
     OnClick = btn_exemplo2Click
   end
-  object btn_exemplo3: TButton
-    Left = 24
-    Top = 120
+  object btn_atividade2: TButton
+    Left = 256
+    Top = 72
     Width = 150
     Height = 33
-    Caption = 'Exemplo 3'
+    Caption = 'Atividade 2'
     TabOrder = 3
-    OnClick = btn_exemplo3Click
+    OnClick = btn_atividade2Click
   end
 end

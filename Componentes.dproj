@@ -140,7 +140,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UExemplo03.pas">
-            <Form>frmExemplo03</Form>
+            <Form>frmAtividade02</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

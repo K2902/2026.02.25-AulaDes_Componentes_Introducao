@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TfrmExemplo03 = class(TForm)
+  TfrmAtividade02 = class(TForm)
     edt_vlr_1: TEdit;
     edt_vlr_2: TEdit;
     lbl_sinal: TLabel;
@@ -29,35 +29,35 @@ type
   end;
 
 var
-  frmExemplo03: TfrmExemplo03;
+  frmAtividade02: TfrmAtividade02;
 
 implementation
 
 {$R *.dfm}
 
-procedure TfrmExemplo03.btn_divClick(Sender: TObject);
+procedure TfrmAtividade02.btn_divClick(Sender: TObject);
 begin
   lbl_sinal.Caption := btn_div.Caption
 end;
 
 
 
-procedure TfrmExemplo03.btn_maisClick(Sender: TObject);
+procedure TfrmAtividade02.btn_maisClick(Sender: TObject);
 begin
   lbl_sinal.Caption := btn_mais.Caption;
 end;
 
-procedure TfrmExemplo03.btn_menosClick(Sender: TObject);
+procedure TfrmAtividade02.btn_menosClick(Sender: TObject);
 begin
   lbl_sinal.Caption := btn_menos.Caption
 end;
 
-procedure TfrmExemplo03.btn_multClick(Sender: TObject);
+procedure TfrmAtividade02.btn_multClick(Sender: TObject);
 begin
   lbl_sinal.Caption := btn_mult.Caption
 end;
 
-procedure TfrmExemplo03.btn_igualClick(Sender: TObject);
+procedure TfrmAtividade02.btn_igualClick(Sender: TObject);
 var n1, n2, total : Double;
 //n1_div, n2_div, total_div : Float;
 begin
