@@ -63,45 +63,49 @@ var n1, n2, total : Double;
 begin
 
 if lbl_sinal.Caption = btn_mais.Caption
-then
+then begin
 n1 :=  StrToFloat(edt_vlr_1.Text);
 n2 :=  StrToFloat(edt_vlr_2.Text);
 total := n1 + n2;
 lbl_resultado.Caption := FloatToStr(total)
+end
 //lbl_resultado.Caption := IntToStr(StrToInt(edt_vlr_1.Text) + StrToInt(edt_vlr_2.Text));
 
 
-{
 else if lbl_sinal.Caption = btn_menos.Caption
-then
+then begin
 n1 :=  StrToFloat(edt_vlr_1.Text);
 n2 :=  StrToFloat(edt_vlr_2.Text);
 total := n1 - n2;
 lbl_resultado.Caption := FloatToStr(total)
-
+end
 
 
 else if lbl_sinal.Caption = btn_mult.Caption
-then
-n1 :=  StrToInt(edt_vlr_1.Text);
+then begin
+n1 :=  StrToFloat(edt_vlr_1.Text);
 n2 :=  StrToInt(edt_vlr_2.Text);
 total := n1 * n2;
 lbl_resultado.Caption := FloatToStr(total)
+end
 
 else if lbl_sinal.Caption = btn_div.Caption
-then
+then begin
 n1 :=  StrToFloat(edt_vlr_1.Text);
 n2 :=  StrToFloat(edt_vlr_2.Text);
 //n1_div := n1;
 //n2_div := n2;
 total := n1/ n2;
 lbl_resultado.Caption := FloatToStr(total);
-
-{if lbl_sinal.Caption = lbl_sinal.Caption
-then
-lbl_resultado.Caption := lbl_sinal.Caption
-}
+end;
 
 end;
+{
+else lbl_sinal.Caption := '?'
+then begin
+lbl_resultado.Caption := lbl_sinal.Caption;
+end.
+}
+
 
 end.
