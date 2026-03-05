@@ -26,7 +26,7 @@ object frmAtividade02: TfrmAtividade02
   end
   object edt_vlr_1: TEdit
     Left = 8
-    Top = 32
+    Top = 29
     Width = 153
     Height = 53
     TabOrder = 0
@@ -82,5 +82,14 @@ object frmAtividade02: TfrmAtividade02
     Caption = '='
     TabOrder = 6
     OnClick = btn_igualClick
+  end
+  object btn_limpar: TButton
+    Left = 344
+    Top = 128
+    Width = 97
+    Height = 49
+    Caption = 'Reset'
+    TabOrder = 7
+    OnClick = btn_limparClick
   end
 end

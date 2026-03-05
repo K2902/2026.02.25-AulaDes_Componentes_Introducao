@@ -17,11 +17,13 @@ type
     btn_div: TButton;
     btn_mult: TButton;
     btn_igual: TButton;
+    btn_limpar: TButton;
     procedure btn_maisClick(Sender: TObject);
     procedure btn_menosClick(Sender: TObject);
     procedure btn_multClick(Sender: TObject);
     procedure btn_divClick(Sender: TObject);
     procedure btn_igualClick(Sender: TObject);
+    procedure btn_limparClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,6 +58,8 @@ procedure TfrmAtividade02.btn_multClick(Sender: TObject);
 begin
   lbl_sinal.Caption := btn_mult.Caption
 end;
+
+
 
 procedure TfrmAtividade02.btn_igualClick(Sender: TObject);
 var n1, n2, total : Double;
@@ -98,14 +102,27 @@ n2 :=  StrToFloat(edt_vlr_2.Text);
 total := n1/ n2;
 lbl_resultado.Caption := FloatToStr(total);
 end;
-
+{
+else
+then begin
+lbl_resultado.Caption := lbl_sinal.Caption;
 end;
+}
+end;
+procedure TfrmAtividade02.btn_limparClick(Sender: TObject);
+begin
+
+edt_vlr_1.Text := ' ';
+edt_vlr_2.Text := ' ';
+lbl_resultado.Caption := '';
+lbl_sinal.Caption := '?';
+end;
+
 {
 else lbl_sinal.Caption := '?'
 then begin
 lbl_resultado.Caption := lbl_sinal.Caption;
-end.
+end;
 }
-
 
 end.
