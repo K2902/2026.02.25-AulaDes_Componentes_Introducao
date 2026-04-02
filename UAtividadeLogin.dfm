@@ -12,6 +12,7 @@ object frmAtividadelogin: TfrmAtividadelogin
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesktopCenter
+  OnCreate = FormCreate
   TextHeight = 30
   object lbl_login: TLabel
     Left = 33

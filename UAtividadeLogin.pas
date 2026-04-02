@@ -18,8 +18,9 @@ type
     procedure edt_senhaChange(Sender: TObject);
     procedure edt_usuarioKeyPress(Sender: TObject; var Key: Char);
     procedure edt_senhaKeyPress(Sender: TObject; var Key: Char);
+    procedure FormCreate(Sender: TObject);
   private
-    { Private declarations }
+    var  user, password : string;
   public
     { Public declarations }
   end;
@@ -33,56 +34,71 @@ implementation
 
 procedure TfrmAtividadelogin.btn_acessarClick(Sender: TObject);
 var     senha, usuario: string;
-    //usuario := 'jedi374';
-    //senha := '123456';
+    //usuario := 'jedi374';    não dar valor para variável ainda
+    //senha := '123456';       não dar valor para variável ainda
 begin
-    usuario := 'jedi374';
-    senha := '123456';
-     if ((edt_usuario.Text = usuario) and (edt_senha.Text = senha)) then
+    usuario := edt_usuario.Text;
+    senha := edt_senha.Text ;
+     if ((usuario = user) and (senha = password)) then
      begin
        ShowMessage('Acesso Liberado');
+       Close;
      end
      else
      begin
        ShowMessage('Acesso Negado');
+       edt_usuario.SetFocus;
      end;
 
-    edt_usuario.Text := '';
-    edt_senha.Text :='';
+    edt_usuario.Clear;
+    edt_senha.Clear;
 
 end;
 
 procedure TfrmAtividadelogin.edt_senhaChange(Sender: TObject);
 begin
-   edt_senha.PasswordChar := '2';
+   edt_senha.PasswordChar := '*';
 end;
 
 
 procedure TfrmAtividadelogin.edt_usuarioKeyPress(Sender: TObject;
   var Key: Char);
 begin
- edt_senha.SetFocus;
+  if Key = #13 then
+  begin
+    edt_senha.SetFocus;
+    Key := #0; // evita o "beep" do ENTER
+  end;
 end;
 
 
+procedure TfrmAtividadelogin.FormCreate(Sender: TObject);
+begin
+user := 'jedi374';
+password := '123456';
+end;
+
 procedure TfrmAtividadelogin.edt_senhaKeyPress(Sender: TObject; var Key: Char);
 var     senha, usuario: string;
-    //usuario := 'jedi374';
-    //senha := '123456';
 begin
-    usuario := 'jedi374';
-    senha := '123456';
-     if ((edt_usuario.Text = usuario) and (edt_senha.Text = senha)) then
+  if Key = #13 then
+  begin
+    usuario := edt_usuario.Text;
+    senha := edt_senha.Text ;
+     if ((usuario = user) and (senha = password)) then
      begin
        ShowMessage('Acesso Liberado');
+       Close;
      end
      else
      begin
        ShowMessage('Acesso Negado');
+       edt_usuario.SetFocus;
      end;
 
-    edt_usuario.Text := '';
-    edt_senha.Text :='';
+    edt_usuario.Clear;
+    edt_senha.Clear;
+  end;
 end;
 
 end.
