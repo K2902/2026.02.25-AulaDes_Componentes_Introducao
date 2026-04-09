@@ -68,11 +68,20 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividadelogin: TButton
     Left = 256
-    Top = 216
+    Top = 215
     Width = 150
     Height = 33
     Caption = 'Atividade Login'
     TabOrder = 6
     OnClick = btn_atividadeloginClick
+  end
+  object btn_mensagem: TButton
+    Left = 24
+    Top = 121
+    Width = 193
+    Height = 32
+    Caption = 'Caixa de Mensagem'
+    TabOrder = 7
+    OnClick = btn_mensagemClick
   end
 end

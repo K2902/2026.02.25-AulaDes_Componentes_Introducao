@@ -155,6 +155,10 @@
             <Form>frmAtividadelogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtividadeMessage.pas">
+            <Form>frmCaixamensagem</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
