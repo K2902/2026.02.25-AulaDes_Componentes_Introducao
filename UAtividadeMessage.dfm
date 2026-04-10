@@ -1,6 +1,7 @@
 object frmCaixamensagem: TfrmCaixamensagem
   Left = 0
   Top = 0
+  BorderStyle = bsDialog
   Caption = 'Caixa de Mensagem'
   ClientHeight = 441
   ClientWidth = 624
@@ -10,6 +11,7 @@ object frmCaixamensagem: TfrmCaixamensagem
   Font.Height = -21
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   TextHeight = 30
   object btn_messagebox: TButton
     Left = 8
