@@ -45,5 +45,6 @@ object frmCaixamensagem: TfrmCaixamensagem
     Height = 73
     Caption = 'Input Box'
     TabOrder = 3
+    OnClick = btn_inputboxClick
   end
 end
