@@ -30,8 +30,8 @@ object frmAtividade44: TfrmAtividade44
   object lbl_suspeito: TLabel
     Left = 383
     Top = 19
-    Width = 354
-    Height = 341
+    Width = 80
+    Height = 28
     Caption = 'Supeitos:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -39,7 +39,6 @@ object frmAtividade44: TfrmAtividade44
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    WordWrap = True
   end
   object edt_nome: TEdit
     Left = 120
@@ -104,7 +103,7 @@ object frmAtividade44: TfrmAtividade44
     OnClick = btn_adicionarClick
   end
   object sbx_vertical: TScrollBox
-    Left = 704
+    Left = 743
     Top = 19
     Width = 33
     Height = 341

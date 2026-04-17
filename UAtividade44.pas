@@ -22,7 +22,8 @@ type
     procedure btn_adicionarClick(Sender: TObject);
   private
     var nome : string;
-    contador : Integer;
+    contador  : Integer;
+    contador1: Integer;
   public
     { Public declarations }
   end;
@@ -48,13 +49,40 @@ begin
   Inc(contador);
   if chk_pergunta5.Checked = true then
   Inc(contador);
+  if edt_nome.Text =  '' then
+  showmessage('Campo do nome não foi preenchido');
+  if edt_nome.Text <> '' then
+  Inc(contador1);
   if contador = 2 then
+  begin
+     lbl_suspeito.Caption := lbl_suspeito.Caption
+     + slinebreak +slinebreak + inttostr(contador1) + 'º Nome: ' +nome + slinebreak
+     + 'Veredito: Supeito';
+  end
+  else if ((contador = 3) or (contador = 4)) then
+  begin
+     lbl_suspeito.Caption := lbl_suspeito.Caption
+     + slinebreak +slinebreak + inttostr(contador1) + 'º Nome: ' +nome + slinebreak
+     + 'Veredito: Cúmplice';
+  end
+  else if contador = 5 then
+  begin
+     lbl_suspeito.Caption := lbl_suspeito.Caption
+     + slinebreak +slinebreak + inttostr(contador1) + 'º Nome: '+nome + slinebreak
+     + 'Veredito: Assassino';
+  end
+  else
+  begin
+    lbl_suspeito.Caption := lbl_suspeito.Caption
+     + slinebreak +slinebreak + inttostr(contador1) + 'º Nome: ' +nome + slinebreak
+     + 'Veredito: Inocente';
+  end;
 
 
 
 
 
-  lbl_suspeito.Caption := lbl_suspeito.Caption + slinebreak + nome;
+  //lbl_suspeito.Caption := lbl_suspeito.Caption + slinebreak + nome;
 
 end;
 
