@@ -21,6 +21,10 @@ type
     btn_atividade46: TButton;
     btn_exemplo24: TButton;
     btn_atividade47: TButton;
+    btn_atividade47Errado: TButton;
+    btn_atividade46Errado: TButton;
+    btn_atividade48: TButton;
+    btn_atividade49: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -33,7 +37,9 @@ type
     procedure btn_atividade44Click(Sender: TObject);
     procedure btn_exemplo24Click(Sender: TObject);
     procedure btn_atividade46Click(Sender: TObject);
-    procedure btn_atividade47Click(Sender: TObject);
+//    procedure btn_atividade47Click(Sender: TObject);
+    procedure btn_atividade46ErradoClick(Sender: TObject);
+    procedure btn_atividade47ErradoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,7 +55,7 @@ implementation
 
 uses UExemplo01, UAtividade01, UExemplo02, UExemplo03, UAtividade26,
   UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
-  UEx_24, UAtividade46, UAtividade47;
+  UEx_24, UAtividade46, UAtividade46Errado, UAtividade47Errado;
 
 
 
@@ -105,12 +111,22 @@ end;
 
 procedure TfrmPrincipal.btn_atividade46Click(Sender: TObject);
 begin
- frmAtividade46.showModal;
+  frmAtividade46.showModal;
 end;
 
-procedure TfrmPrincipal.btn_atividade47Click(Sender: TObject);
+procedure TfrmPrincipal.btn_atividade46ErradoClick(Sender: TObject);
 begin
-     frmAtividade47.ShowModal;
+  frmAtividade46Errado.ShowModal;
+end;
+
+//procedure TfrmPrincipal.btn_atividade47Click(Sender: TObject);
+//begin
+//  frmAtividade47.ShowModal;
+//end;
+
+procedure TfrmPrincipal.btn_atividade47ErradoClick(Sender: TObject);
+begin
+    frmAtividade47Errado.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividadeloginClick(Sender: TObject);

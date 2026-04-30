@@ -8,7 +8,7 @@ uses
 
 type
   TfrmAtividade46 = class(TForm)
-    lbl_mensagem: TLabel;
+    lblMensagem: TLabel;
     procedure FormShow(Sender: TObject);
   private
     { Private declarations }
@@ -24,7 +24,6 @@ implementation
 {$R *.dfm}
 
 procedure TfrmAtividade46.FormShow(Sender: TObject);
-
 var
   contarErro : Integer;
   vDigitado, senha : String;
@@ -35,14 +34,26 @@ begin
   repeat
     inc(contarErro);
 
+    if (contarErro >= 3) then
+    begin
+      Application.MessageBox('Você errou a três vezes, o programa ' +
+      'será fechado', 'AVISO', 16);
+      Application.Terminate;
+      Break;
+    end;
+
     vDigitado := InputBox('Acesso ao sistema',
-    'Digite a senha correta' + #13 + 'para acessar o sistema','');
-    if contarErro = 2 then
-    break;
+    'Digite a senha correta ' + #13 + 'para acessar o sistema','');
 
-  until (senha = vDigitado) ;
+    if (vDigitado = '') then
+    begin
+      Close;
+    end;
 
-  lbl_mensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
+
+  until (senha = vDigitado);
+
+  lblMensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
 
 end;
 

@@ -1,23 +1,22 @@
-object frmAtividade46: TfrmAtividade46
+object frmAtividade46Errado: TfrmAtividade46Errado
   Left = 0
   Top = 0
   Caption = 'Atividade 46'
-  ClientHeight = 59
-  ClientWidth = 216
+  ClientHeight = 261
+  ClientWidth = 528
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
+  Font.Height = -32
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poScreenCenter
   OnShow = FormShow
-  TextHeight = 15
-  object lblMensagem: TLabel
+  TextHeight = 45
+  object lbl_mensagem: TLabel
     Left = 8
     Top = 8
-    Width = 200
-    Height = 43
+    Width = 505
+    Height = 245
     AutoSize = False
   end
 end
