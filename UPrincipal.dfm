@@ -2,8 +2,13 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
+<<<<<<< Updated upstream
   ClientHeight = 474
   ClientWidth = 688
+=======
+  ClientHeight = 346
+  ClientWidth = 694
+>>>>>>> Stashed changes
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

@@ -29,7 +29,11 @@ var
   vDigitado, senha : String;
 begin
   senha := '123';
+<<<<<<< Updated upstream
   contarErro := -1;
+=======
+  contarErro := 0;
+>>>>>>> Stashed changes
 
   repeat
     inc(contarErro);
@@ -43,17 +47,30 @@ begin
     end;
 
     vDigitado := InputBox('Acesso ao sistema',
+<<<<<<< Updated upstream
     'Digite a senha correta ' + #13 + 'para acessar o sistema','');
+=======
+    'Digite a senha correta' + #13 + 'para acessar o sistema','');
+    if contarErro = 3 then
+    begin
+    lbl_mensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
+    Exit;
+    end;
+>>>>>>> Stashed changes
 
     if (vDigitado = '') then
     begin
       Close;
     end;
 
+<<<<<<< Updated upstream
 
   until (senha = vDigitado);
 
   lblMensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
+=======
+  lbl_mensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro-1) + ' vez(es)';
+>>>>>>> Stashed changes
 
 end;
 
