@@ -171,12 +171,40 @@
             <Form>frmEx_24</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UAtividade46Errado.pas">
-            <Form>frmAtividade46Errado</Form>
+        <DCCReference Include="UAtividade46Timer.pas">
+            <Form>frmAtividade46Timer</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade47Errado.pas">
             <Form>frmAtividade47Errado</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade46.pas">
+            <Form>frmAtividade46</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade47.pas">
+            <Form>frmAtividade47</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade48.pas">
+            <Form>frmAtividade48</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade49.pas">
+            <Form>frmAtividade49</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade50.pas">
+            <Form>frmAtividade50</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade51.pas">
+            <Form>frmAtividade51</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade52.pas">
+            <Form>frmAtividade52</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

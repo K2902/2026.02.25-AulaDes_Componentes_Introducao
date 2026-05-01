@@ -1,4 +1,4 @@
-object frmAtividade46Errado: TfrmAtividade46Errado
+object frmAtividade46Timer: TfrmAtividade46Timer
   Left = 0
   Top = 0
   Caption = 'Atividade 46'
@@ -10,6 +10,7 @@ object frmAtividade46Errado: TfrmAtividade46Errado
   Font.Height = -32
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   OnShow = FormShow
   TextHeight = 45
   object lbl_mensagem: TLabel
@@ -18,5 +19,11 @@ object frmAtividade46Errado: TfrmAtividade46Errado
     Width = 505
     Height = 245
     AutoSize = False
+  end
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer
+    Left = 472
+    Top = 216
   end
 end

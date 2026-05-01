@@ -28,7 +28,7 @@ var
   contarErro : Integer;
   vDigitado, senha : String;
 begin
-  senha := '1475369';
+  senha := '123';
   contarErro := -1;
 
   repeat

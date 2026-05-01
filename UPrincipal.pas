@@ -22,9 +22,12 @@ type
     btn_exemplo24: TButton;
     btn_atividade47: TButton;
     btn_atividade47Errado: TButton;
-    btn_atividade46Errado: TButton;
+    btn_atividade46timer: TButton;
     btn_atividade48: TButton;
     btn_atividade49: TButton;
+    btn_atividade50: TButton;
+    btn_atividade51: TButton;
+    btn_atividade52: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -37,9 +40,14 @@ type
     procedure btn_atividade44Click(Sender: TObject);
     procedure btn_exemplo24Click(Sender: TObject);
     procedure btn_atividade46Click(Sender: TObject);
-//    procedure btn_atividade47Click(Sender: TObject);
-    procedure btn_atividade46ErradoClick(Sender: TObject);
+    procedure btn_atividade47Click(Sender: TObject);
+    procedure btn_atividade46timerClick(Sender: TObject);
     procedure btn_atividade47ErradoClick(Sender: TObject);
+    procedure btn_atividade48Click(Sender: TObject);
+    procedure btn_atividade49Click(Sender: TObject);
+    procedure btn_atividade50Click(Sender: TObject);
+    procedure btn_atividade51Click(Sender: TObject);
+    procedure btn_atividade52Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,7 +63,8 @@ implementation
 
 uses UExemplo01, UAtividade01, UExemplo02, UExemplo03, UAtividade26,
   UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
-  UEx_24, UAtividade46, UAtividade46Errado, UAtividade47Errado;
+  UEx_24, UAtividade46, UAtividade46Timer, UAtividade47Errado, UAtividade47,
+  UAtividade48, UAtividade49, UAtividade50, UAtividade51, UAtividade52;
 
 
 
@@ -114,19 +123,44 @@ begin
   frmAtividade46.showModal;
 end;
 
-procedure TfrmPrincipal.btn_atividade46ErradoClick(Sender: TObject);
+procedure TfrmPrincipal.btn_atividade46timerClick(Sender: TObject);
 begin
-  frmAtividade46Errado.ShowModal;
+  frmAtividade46Timer.ShowModal;
 end;
 
-//procedure TfrmPrincipal.btn_atividade47Click(Sender: TObject);
-//begin
-//  frmAtividade47.ShowModal;
-//end;
+procedure TfrmPrincipal.btn_atividade47Click(Sender: TObject);
+begin
+  frmAtividade47.ShowModal;
+end;
 
 procedure TfrmPrincipal.btn_atividade47ErradoClick(Sender: TObject);
 begin
     frmAtividade47Errado.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade48Click(Sender: TObject);
+begin
+  frmAtividade48.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade49Click(Sender: TObject);
+begin
+  frmAtividade49.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade50Click(Sender: TObject);
+begin
+  frmAtividade50.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade51Click(Sender: TObject);
+begin
+  frmAtividade51.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade52Click(Sender: TObject);
+begin
+  frmAtividade52.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividadeloginClick(Sender: TObject);
