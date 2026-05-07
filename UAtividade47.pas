@@ -21,17 +21,14 @@ implementation
 
 {$R *.dfm}
 
-<<<<<<< Updated upstream
-=======
-procedure TfrmAtividade47.btn_addClick(Sender: TObject);
-var numDigitado : array[1..6] of integer;
-begin
-  // while numDigitado[] <> numDigitado[6] do
+//procedure TfrmAtividade47.btn_addClick(Sender: TObject);
+//var numDigitado : array[1..6] of integer;
+//begin
+//  // while numDigitado[] <> numDigitado[6] do
+//
+//   //numDigitado := strtoint(edt_num.Text);
+//
+//   showmessage ('Número adicionado com sucesso')
+//end;
 
-   //numDigitado := strtoint(edt_num.Text);
-
-   showmessage ('Número adicionado com sucesso')
-end;
-
->>>>>>> Stashed changes
 end.

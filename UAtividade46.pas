@@ -28,49 +28,32 @@ var
   contarErro : Integer;
   vDigitado, senha : String;
 begin
-  senha := '123';
-<<<<<<< Updated upstream
+
+  senha := '777';
   contarErro := -1;
-=======
-  contarErro := 0;
->>>>>>> Stashed changes
 
   repeat
     inc(contarErro);
 
-    if (contarErro >= 3) then
+    if contarErro = 3 then
     begin
-      Application.MessageBox('Você errou a três vezes, o programa ' +
-      'será fechado', 'AVISO', 16);
-      Application.Terminate;
+      application.messagebox('Você errou a senha 3 vezes o programa será fechado', 'AVISO', 16);
+      Close;
       Break;
     end;
 
     vDigitado := InputBox('Acesso ao sistema',
-<<<<<<< Updated upstream
-    'Digite a senha correta ' + #13 + 'para acessar o sistema','');
-=======
     'Digite a senha correta' + #13 + 'para acessar o sistema','');
-    if contarErro = 3 then
-    begin
-    lbl_mensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
-    Exit;
-    end;
->>>>>>> Stashed changes
 
     if (vDigitado = '') then
     begin
       Close;
     end;
 
-<<<<<<< Updated upstream
-
-  until (senha = vDigitado);
+  until (senha = vDigitado) ;
 
   lblMensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
-=======
-  lbl_mensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro-1) + ' vez(es)';
->>>>>>> Stashed changes
+  Close;
 
 end;
 
