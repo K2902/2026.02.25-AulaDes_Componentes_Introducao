@@ -28,32 +28,32 @@ var
   contarErro : Integer;
   vDigitado, senha : String;
 begin
-
-  senha := '777';
+  senha := '1475369';
   contarErro := -1;
 
   repeat
     inc(contarErro);
 
-    if contarErro = 3 then
+    if (contarErro >= 3) then
     begin
-      application.messagebox('Você errou a senha 3 vezes o programa será fechado', 'AVISO', 16);
-      Close;
+      Application.MessageBox('Você errou a três vezes, o programa ' +
+      'será fechado', 'AVISO', 16);
+      Application.Terminate;
       Break;
     end;
 
     vDigitado := InputBox('Acesso ao sistema',
-    'Digite a senha correta' + #13 + 'para acessar o sistema','');
+    'Digite a senha correta ' + #13 + 'para acessar o sistema','');
 
     if (vDigitado = '') then
     begin
       Close;
     end;
 
-  until (senha = vDigitado) ;
+
+  until (senha = vDigitado);
 
   lblMensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
-  Close;
 
 end;
 
