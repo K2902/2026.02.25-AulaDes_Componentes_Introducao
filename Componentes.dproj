@@ -183,10 +183,6 @@
             <Form>frmAtividade46</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UAtividade47.pas">
-            <Form>frmAtividade47</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="UAtividade48.pas">
             <Form>frmAtividade48</Form>
             <FormType>dfm</FormType>

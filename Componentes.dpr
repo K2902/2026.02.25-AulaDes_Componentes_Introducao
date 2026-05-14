@@ -17,7 +17,6 @@ uses
   UAtividade46Timer in 'UAtividade46Timer.pas' {frmAtividade46Timer},
   UAtividade47Errado in 'UAtividade47Errado.pas' {frmAtividade47Errado},
   UAtividade46 in 'UAtividade46.pas' {frmAtividade46},
-  UAtividade47 in 'UAtividade47.pas' {frmAtividade47},
   UAtividade48 in 'UAtividade48.pas' {frmAtividade48},
   UAtividade49 in 'UAtividade49.pas' {frmAtividade49},
   UAtividade50 in 'UAtividade50.pas' {frmAtividade50},
@@ -44,7 +43,6 @@ begin
   Application.CreateForm(TfrmAtividade46Timer, frmAtividade46Timer);
   Application.CreateForm(TfrmAtividade47Errado, frmAtividade47Errado);
   Application.CreateForm(TfrmAtividade46, frmAtividade46);
-  Application.CreateForm(TfrmAtividade47, frmAtividade47);
   Application.CreateForm(TfrmAtividade48, frmAtividade48);
   Application.CreateForm(TfrmAtividade49, frmAtividade49);
   Application.CreateForm(TfrmAtividade50, frmAtividade50);

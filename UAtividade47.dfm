@@ -10,15 +10,12 @@ object frmAtividade47: TfrmAtividade47
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-<<<<<<< Updated upstream
   TextHeight = 15
-=======
-  TextHeight = 45
   object lbl_instrucao: TLabel
     Left = 8
     Top = 8
-    Width = 440
-    Height = 90
+    Width = 304
+    Height = 15
     Caption = 'Digite 6 n'#250'meros inteiros para separar em pares e '#237'mpares'
     WordWrap = True
   end
@@ -26,7 +23,7 @@ object frmAtividade47: TfrmAtividade47
     Left = 8
     Top = 133
     Width = 225
-    Height = 49
+    Height = 23
     NumbersOnly = True
     TabOrder = 0
   end
@@ -43,7 +40,7 @@ object frmAtividade47: TfrmAtividade47
     Top = 200
     Width = 225
     Height = 217
-    ItemHeight = 45
+    ItemHeight = 15
     TabOrder = 2
   end
   object ltb_impar: TListBox
@@ -51,7 +48,7 @@ object frmAtividade47: TfrmAtividade47
     Top = 200
     Width = 225
     Height = 217
-    ItemHeight = 45
+    ItemHeight = 15
     TabOrder = 3
   end
   object btn_add: TButton
@@ -61,7 +58,5 @@ object frmAtividade47: TfrmAtividade47
     Height = 47
     Caption = 'Add'
     TabOrder = 4
-    OnClick = btn_addClick
   end
->>>>>>> Stashed changes
 end
