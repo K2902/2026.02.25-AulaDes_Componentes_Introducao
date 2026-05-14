@@ -192,4 +192,12 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 19
     OnClick = btn_atividade52Click
   end
+  object btn_atividade52correcao: TButton
+    Left = 464
+    Top = 123
+    Width = 204
+    Height = 30
+    Caption = 'Atividade 52 Corre'#231#227'o'
+    TabOrder = 20
+  end
 end

@@ -28,6 +28,7 @@ type
     btn_atividade50: TButton;
     btn_atividade51: TButton;
     btn_atividade52: TButton;
+    btn_atividade52correcao: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -64,7 +65,8 @@ implementation
 uses UExemplo01, UAtividade01, UExemplo02, UExemplo03, UAtividade26,
   UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
   UEx_24, UAtividade46, UAtividade46Timer, UAtividade47Errado, UAtividade47,
-  UAtividade48, UAtividade49, UAtividade50, UAtividade51, UAtividade52;
+  UAtividade48, UAtividade49, UAtividade50, UAtividade51, UAtividade52, UAtv_52,
+  UAtv47;
 
 
 
@@ -130,7 +132,7 @@ end;
 
 procedure TfrmPrincipal.btn_atividade47Click(Sender: TObject);
 begin
-  frmAtividade47.ShowModal;
+  frmAtv47.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividade47ErradoClick(Sender: TObject);

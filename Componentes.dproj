@@ -203,6 +203,14 @@
             <Form>frmAtividade52</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtv_52.pas">
+            <Form>frmAtv_52</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtv47.pas">
+            <Form>frmAtv47</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
