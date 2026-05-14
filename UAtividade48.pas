@@ -49,8 +49,10 @@ begin
   while (strtoint(numDigitado) <> 0) do
   begin
   inc(contador);
-  soma := soma + strtoint(numdigitado);
+  soma := soma + strtoint(numDigitado);
   media := soma/contador;
+//  messagebox(application.handle,'Soma: '+inttostr(soma)+'#13'+'Média: '+inttostr(media)+slinebreak+ 'Números digitados: '+inttostr(contador)
+//  , 'Soma, média e quantos números foram digitados', idok)
 
   end;
 

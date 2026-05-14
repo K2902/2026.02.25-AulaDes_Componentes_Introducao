@@ -1,16 +1,17 @@
-object frmAtv47: TfrmAtv47
+object frmEx_26: TfrmEx_26
   Left = 0
   Top = 0
-  Caption = 'Atividade 47'
-  ClientHeight = 205
-  ClientWidth = 474
+  Caption = 'frmEx_26'
+  ClientHeight = 35
+  ClientWidth = 124
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  Position = poScreenCenter
+  OldCreateOrder = False
   OnShow = FormShow
+  PixelsPerInch = 96
   TextHeight = 13
 end

@@ -32,11 +32,16 @@ end;
 
 procedure TfrmAtividade49.tmrContadorTimer(Sender: TObject);
 
-  var numfinal, numinicial, numdiv, primeironum: integer;
+  var numfinal, numinicial, numdiv, resultado: integer;
 
 begin
   tmrContador.Enabled := False;
   messagebox(application.handle, 'Programa que identifica o primeiro número divisível dentro de uma faixa de valores','Atividade 49', mb_iconexclamation + idok);
+  numinicial :=    strtoint(inputbox('Primeiro número', 'Digite o número inicial:',  ''));
+  numfinal :=    strtoint(inputbox('Segundo número', 'Digite o número final:',  ''));
+  numdiv :=    strtoint(inputbox('Número divisor', 'Digite o número divisor:',  ''));
+
+
 end;
 
 end.

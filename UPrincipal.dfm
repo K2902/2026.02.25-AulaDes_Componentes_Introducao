@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 440
-  ClientWidth = 676
+  ClientHeight = 534
+  ClientWidth = 862
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -121,20 +121,20 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_exemplo24Click
   end
   object btn_atividade47: TButton
-    Left = 24
-    Top = 312
-    Width = 150
+    Left = 456
+    Top = 72
+    Width = 212
     Height = 33
-    Caption = 'Atividade 47'
+    Caption = 'Atividade 47 Corre'#231#227'o'
     TabOrder = 12
     OnClick = btn_atividade47Click
   end
   object btn_atividade47Errado: TButton
-    Left = 464
-    Top = 71
+    Left = 24
+    Top = 304
     Width = 185
     Height = 34
-    Caption = 'Atividade 47 errada'
+    Caption = 'Atividade 47 Errada'
     TabOrder = 13
     OnClick = btn_atividade47ErradoClick
   end
@@ -166,8 +166,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade49Click
   end
   object btn_atividade50: TButton
-    Left = 256
-    Top = 312
+    Left = 584
+    Top = 328
     Width = 150
     Height = 33
     Caption = 'Atividade 50'
@@ -175,8 +175,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade50Click
   end
   object btn_atividade51: TButton
-    Left = 256
-    Top = 360
+    Left = 584
+    Top = 384
     Width = 150
     Height = 33
     Caption = 'Atividade 51'
@@ -184,8 +184,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade51Click
   end
   object btn_atividade52: TButton
-    Left = 256
-    Top = 412
+    Left = 592
+    Top = 436
     Width = 150
     Height = 29
     Caption = 'Atividade 52'
@@ -193,11 +193,20 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade52Click
   end
   object btn_atividade52correcao: TButton
-    Left = 464
+    Left = 456
     Top = 123
-    Width = 204
+    Width = 212
     Height = 30
-    Caption = 'Atividade 52 Corre'#231#227'o'
+    Caption = 'Atividade 52 Corrigir'
     TabOrder = 20
+    OnClick = btn_atividade52correcaoClick
+  end
+  object btn_exemplo26: TButton
+    Left = 256
+    Top = 303
+    Width = 150
+    Height = 35
+    Caption = 'Exemplo 26'
+    TabOrder = 21
   end
 end

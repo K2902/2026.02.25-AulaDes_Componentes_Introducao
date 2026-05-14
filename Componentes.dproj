@@ -211,6 +211,10 @@
             <Form>frmAtv47</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UEx_26.pas">
+            <Form>frmEx_26</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

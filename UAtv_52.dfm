@@ -10,8 +10,6 @@ object frmAtv_52: TfrmAtv_52
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
-  PixelsPerInch = 96
   TextHeight = 13
   object lblInicio: TLabel
     Left = 16
@@ -38,7 +36,6 @@ object frmAtv_52: TfrmAtv_52
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    OnDblClick = lblFimDblClick
   end
   object mmoValores: TMemo
     Left = 200
@@ -93,5 +90,6 @@ object frmAtv_52: TfrmAtv_52
     Font.Style = []
     ParentFont = False
     TabOrder = 3
+    OnClick = btnExibirClick
   end
 end

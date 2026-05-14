@@ -29,6 +29,7 @@ type
     btn_atividade51: TButton;
     btn_atividade52: TButton;
     btn_atividade52correcao: TButton;
+    btn_exemplo26: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -49,6 +50,7 @@ type
     procedure btn_atividade50Click(Sender: TObject);
     procedure btn_atividade51Click(Sender: TObject);
     procedure btn_atividade52Click(Sender: TObject);
+    procedure btn_atividade52correcaoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -163,6 +165,11 @@ end;
 procedure TfrmPrincipal.btn_atividade52Click(Sender: TObject);
 begin
   frmAtividade52.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade52correcaoClick(Sender: TObject);
+begin
+  frmAtv_52.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividadeloginClick(Sender: TObject);
