@@ -30,6 +30,9 @@ type
     btn_atividade52: TButton;
     btn_atividade52correcao: TButton;
     btn_exemplo26: TButton;
+    Button1: TButton;
+    btn_atividade48correcao: TButton;
+    btn_atividade53: TButton;
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -51,6 +54,7 @@ type
     procedure btn_atividade51Click(Sender: TObject);
     procedure btn_atividade52Click(Sender: TObject);
     procedure btn_atividade52correcaoClick(Sender: TObject);
+    procedure btn_atividade53Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -68,7 +72,7 @@ uses UExemplo01, UAtividade01, UExemplo02, UExemplo03, UAtividade26,
   UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
   UEx_24, UAtividade46, UAtividade46Timer, UAtividade47Errado, UAtividade47,
   UAtividade48, UAtividade49, UAtividade50, UAtividade51, UAtividade52, UAtv_52,
-  UAtv47;
+  UAtv47, Ucomponentes, UEx_26;
 
 
 
@@ -170,6 +174,11 @@ end;
 procedure TfrmPrincipal.btn_atividade52correcaoClick(Sender: TObject);
 begin
   frmAtv_52.ShowModal;
+end;
+
+procedure TfrmPrincipal.btn_atividade53Click(Sender: TObject);
+begin
+  frmCadastro.showmodal;
 end;
 
 procedure TfrmPrincipal.btn_atividadeloginClick(Sender: TObject);

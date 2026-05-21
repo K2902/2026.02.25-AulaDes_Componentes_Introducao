@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 643
-  ClientWidth = 947
+  ClientHeight = 626
+  ClientWidth = 941
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -131,7 +131,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade47Errado: TButton
     Left = 472
-    Top = 8
+    Top = 25
     Width = 185
     Height = 34
     Caption = 'Atividade 47 Errada'
@@ -148,8 +148,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade46timerClick
   end
   object btn_atividade48: TButton
-    Left = 688
-    Top = 8
+    Left = 472
+    Top = 65
     Width = 150
     Height = 33
     Caption = 'Atividade 48'
@@ -167,7 +167,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade50: TButton
     Left = 472
-    Top = 136
+    Top = 104
     Width = 150
     Height = 33
     Caption = 'Atividade 50'
@@ -185,7 +185,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade52: TButton
     Left = 472
-    Top = 188
+    Top = 143
     Width = 150
     Height = 29
     Caption = 'Atividade 52'
@@ -193,11 +193,11 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade52Click
   end
   object btn_atividade52correcao: TButton
-    Left = 472
-    Top = 73
+    Left = 194
+    Top = 480
     Width = 212
     Height = 30
-    Caption = 'Atividade 52 Corrigir'
+    Caption = 'Atividade 52 Corre'#231#227'o'
     TabOrder = 20
     OnClick = btn_atividade52correcaoClick
   end
@@ -208,5 +208,30 @@ object frmPrincipal: TfrmPrincipal
     Height = 35
     Caption = 'Exemplo 26'
     TabOrder = 21
+  end
+  object Button1: TButton
+    Left = 440
+    Top = 480
+    Width = 150
+    Height = 33
+    Caption = 'Button1'
+    TabOrder = 22
+  end
+  object btn_atividade48correcao: TButton
+    Left = 24
+    Top = 383
+    Width = 212
+    Height = 34
+    Caption = 'Atividade 48 Corre'#231#227'o'
+    TabOrder = 23
+  end
+  object btn_atividade53: TButton
+    Left = 256
+    Top = 344
+    Width = 150
+    Height = 33
+    Caption = 'Atividade 53'
+    TabOrder = 24
+    OnClick = btn_atividade53Click
   end
 end
