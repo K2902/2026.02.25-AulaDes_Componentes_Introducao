@@ -31,8 +31,26 @@ begin
 end;
 
 procedure TfrmAtividade52.tmrContadorTimer(Sender: TObject);
+ var nInicio, nFim, resultado: integer;
+var contador1, contador2 : Integer;
 begin
   tmrContador.Enabled := False;
+
+//
+//  nInicio := StrToInt(edtInicio.Text);
+//  nFim := StrToInt(edtFim.Text);
+//  contador1 := 0;
+//  contador2 := 0;
+//
+//  for contador1 := nInicio to nFim do
+//  begin
+//    mmoValores.Lines.Add('Tabuada do ' + IntToStr(contador1));
+//    for contador2 := 1 to 10 do
+//      begin
+//        resultado := contador1 * contador2;
+//        mmoValores.Lines.Add(IntToStr(contador1) + ' X ' + IntToStr(contador2) + ' = ' + IntToStr(resultado));
+//      end;
+//  end;
 end;
 
 end.

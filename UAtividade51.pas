@@ -31,8 +31,31 @@ begin
 end;
 
 procedure TfrmAtividade51.tmrContadorTimer(Sender: TObject);
+  var numDigitado, contador, numDiv: integer;
 begin
   tmrContador.Enabled := False;
+
+  numDigitado := strtoint(inputbox('Atividade 51', 'Digite o valor para verificação:', ''));
+
+  for contador := numDigitado downto 1 do
+    begin
+      if (numDigitado mod contador = 0) then
+      begin
+        inc(numDiv)
+      end;
+      
+    end;
+
+    if (numDiv = 2) then
+    begin
+      application.messagebox(Pchar('O número ' + inttostr(numDigitado) + ' é primo'), 'Atividade 51', 64);
+    end
+    else
+    begin
+      application.messagebox(Pchar('O número ' + inttostr(numDigitado) + ' não é primo'), 'Atividade 51', 64);
+    end;
+    close;
+
 end;
 
 end.
