@@ -50,10 +50,18 @@ begin
 inc(contador1);
 nome := edtNome.Text;
 endereco := edtEndereco.Text;
+if rbtFem.checked = true then
+sexo := 'Feminino';
+if rbtMasc.checked = true then
+begin
+sexo := 'Masculino';
+end;
+//else
+//sexo := 'não selecionado';
 
 mmoRegistros.lines.add(inttostr(contador1)+'º Registro' +slinebreak+'Nome: '+nome+slinebreak
 +'Endereço: '+endereco+slinebreak+'Cidade: '+(cbbCidade.Items[cbbCidade.ItemIndex])+slinebreak
-+'Frutas: ')
++'Sexo: '+sexo+slinebreak+'Frutas: '+slinebreak)
 end;
 
 
