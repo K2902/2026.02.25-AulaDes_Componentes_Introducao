@@ -46,6 +46,7 @@ implementation
 
 procedure TfrmCadastro.btnCadastrarClick(Sender: TObject);
 var nome, endereco, sexo: string;
+var frutas: string;
 begin
 inc(contador1);
 nome := edtNome.Text;
@@ -56,12 +57,32 @@ if rbtMasc.checked = true then
 begin
 sexo := 'Masculino';
 end;
+if ccbBanana.state  = cbchecked then
+begin
+  frutas := frutas + 'Banana' +slinebreak
+end;
+if ccbMaca.state  = cbchecked then
+begin
+  frutas := frutas + 'Maçã' +slinebreak
+end;if ccbMorango.state  = cbchecked then
+begin
+  frutas := frutas + 'Morango' +slinebreak
+end;if ccbJaca.state  = cbchecked then
+begin
+  frutas := frutas + 'Jaca' +slinebreak
+end;if ccbUVa.state  = cbchecked then
+begin
+  frutas := frutas + 'Uva' +slinebreak
+end;if ccbManga.state  = cbchecked then
+begin
+  frutas := frutas + 'Manga' +slinebreak
+end;
 //else
 //sexo := 'não selecionado';
 
 mmoRegistros.lines.add(inttostr(contador1)+'º Registro' +slinebreak+'Nome: '+nome+slinebreak
 +'Endereço: '+endereco+slinebreak+'Cidade: '+(cbbCidade.Items[cbbCidade.ItemIndex])+slinebreak
-+'Sexo: '+sexo+slinebreak+'Frutas: '+slinebreak)
++'Sexo: '+sexo+slinebreak+'Frutas: '+slinebreak+frutas)
 end;
 
 

@@ -176,7 +176,7 @@
   end
   object mmoRegistros: TMemo
     Left = 320
-    Top = 16
+    Top = 8
     Width = 361
     Height = 320
     Font.Charset = DEFAULT_CHARSET
