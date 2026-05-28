@@ -64,16 +64,20 @@ end;
 if ccbMaca.state  = cbchecked then
 begin
   frutas := frutas + 'Maçã' +slinebreak
-end;if ccbMorango.state  = cbchecked then
+end;
+if ccbMorango.state  = cbchecked then
 begin
   frutas := frutas + 'Morango' +slinebreak
-end;if ccbJaca.state  = cbchecked then
+end;
+if ccbJaca.state  = cbchecked then
 begin
   frutas := frutas + 'Jaca' +slinebreak
-end;if ccbUVa.state  = cbchecked then
+end;
+if ccbUVa.state  = cbchecked then
 begin
   frutas := frutas + 'Uva' +slinebreak
-end;if ccbManga.state  = cbchecked then
+end;
+if ccbManga.state  = cbchecked then
 begin
   frutas := frutas + 'Manga' +slinebreak
 end;

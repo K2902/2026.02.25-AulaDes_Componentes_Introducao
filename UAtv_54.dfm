@@ -1,0 +1,322 @@
+object frmAtv_54: TfrmAtv_54
+  Left = 0
+  Top = 0
+  Margins.Left = 2
+  Margins.Top = 2
+  Margins.Right = 2
+  Margins.Bottom = 2
+  Caption = 'frmAtv_54'
+  ClientHeight = 224
+  ClientWidth = 648
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  TextHeight = 12
+  object lblNome: TLabel
+    Left = 6
+    Top = 6
+    Width = 42
+    Height = 19
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblIdade: TLabel
+    Left = 6
+    Top = 70
+    Width = 40
+    Height = 19
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Idade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edtNome: TEdit
+    Left = 6
+    Top = 37
+    Width = 148
+    Height = 27
+    Hint = 'Digite o nome da pessoa'
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object edtIdade: TEdit
+    Left = 6
+    Top = 96
+    Width = 148
+    Height = 27
+    Hint = 'Digite a idade da pessoa'
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object rgpSexo: TRadioGroup
+    Left = 6
+    Top = 126
+    Width = 148
+    Height = 84
+    Hint = 'Selecione o sexo'
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Sexo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Items.Strings = (
+      'Masculino'
+      'Feminino')
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object mmoRegistros: TMemo
+    Left = 178
+    Top = 6
+    Width = 252
+    Height = 177
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+  object gpbDados: TGroupBox
+    Left = 448
+    Top = 6
+    Width = 195
+    Height = 206
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Dados'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    object lblNmRegistro: TLabel
+      Left = 13
+      Top = 26
+      Width = 95
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'N'#186' Registros:'
+    end
+    object lblTtHomens: TLabel
+      Left = 13
+      Top = 56
+      Width = 64
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'Homens:'
+    end
+    object lblTtMulheres: TLabel
+      Left = 13
+      Top = 86
+      Width = 69
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'Mulheres:'
+    end
+    object lblMaiorIdade: TLabel
+      Left = 13
+      Top = 118
+      Width = 90
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'Maior Idade:'
+    end
+    object lblMenorIdade: TLabel
+      Left = 13
+      Top = 148
+      Width = 95
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'Menor Idade:'
+    end
+    object lblMediaIdade: TLabel
+      Left = 13
+      Top = 179
+      Width = 92
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'Idade M'#233'dia:'
+    end
+    object lblNmRegistroV: TLabel
+      Left = 131
+      Top = 26
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+    object lblTtHomensV: TLabel
+      Left = 131
+      Top = 56
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+    object lblTtMulheresV: TLabel
+      Left = 131
+      Top = 86
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+    object lblMaiorIdadeV: TLabel
+      Left = 131
+      Top = 117
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+    object lblMenorIdadeV: TLabel
+      Left = 131
+      Top = 147
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+    object lblMediaIdadeV: TLabel
+      Left = 131
+      Top = 178
+      Width = 9
+      Height = 19
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = '0'
+    end
+  end
+  object btnInserirDados: TButton
+    Left = 178
+    Top = 188
+    Width = 80
+    Height = 24
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Inserir'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btnInserirDadosClick
+  end
+  object btnLimparDados: TButton
+    Left = 263
+    Top = 188
+    Width = 80
+    Height = 24
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Apagar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btnLimparDadosClick
+  end
+end

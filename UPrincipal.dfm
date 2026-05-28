@@ -209,13 +209,14 @@ object frmPrincipal: TfrmPrincipal
     Caption = 'Exemplo 26'
     TabOrder = 21
   end
-  object Button1: TButton
-    Left = 440
-    Top = 480
+  object btn_atividade54: TButton
+    Left = 256
+    Top = 383
     Width = 150
     Height = 33
-    Caption = 'Button1'
+    Caption = 'Atividade 54'
     TabOrder = 22
+    OnClick = btn_atividade54Click
   end
   object btn_atividade48correcao: TButton
     Left = 24

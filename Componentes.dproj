@@ -219,6 +219,10 @@
             <Form>frmCadastro</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtv_54.pas">
+            <Form>frmAtv_54</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

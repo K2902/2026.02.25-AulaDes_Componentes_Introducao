@@ -25,7 +25,8 @@ uses
   UAtv_52 in 'UAtv_52.pas' {frmAtv_52},
   UAtv47 in 'UAtv47.pas' {frmAtv47},
   UEx_26 in 'UEx_26.pas' {frmEx_26},
-  Ucomponentes in 'Ucomponentes.pas' {frmCadastro};
+  Ucomponentes in 'Ucomponentes.pas' {frmCadastro},
+  UAtv_54 in 'UAtv_54.pas' {frmAtv_54};
 
 {$R *.res}
 
@@ -56,5 +57,6 @@ begin
   Application.CreateForm(TfrmAtv47, frmAtv47);
   Application.CreateForm(TfrmEx_26, frmEx_26);
   Application.CreateForm(TfrmCadastro, frmCadastro);
+  Application.CreateForm(TfrmAtv_54, frmAtv_54);
   Application.Run;
 end.
