@@ -84,6 +84,7 @@ object frmAtv_54: TfrmAtv_54
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
+    NumbersOnly = True
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
