@@ -14,6 +14,7 @@ object frmAtv_54: TfrmAtv_54
   Font.Height = -10
   Font.Name = 'Tahoma'
   Font.Style = []
+  OnShow = FormShow
   TextHeight = 12
   object lblNome: TLabel
     Left = 6
