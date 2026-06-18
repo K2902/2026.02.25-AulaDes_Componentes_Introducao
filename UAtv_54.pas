@@ -137,6 +137,10 @@ lblMediaIdadeV.Caption := FormatFloat('0.00', media);
 lblTtHomensV.Caption :=   inttostr(qtdHomens);
 lblTtMulheresV.Caption :=   inttostr(qtdMulheres);
 lblNmRegistroV.Caption := inttostr(registrosContador);
+
+edtNome.Clear;
+edtIdade.Clear;
+rgpSexo.IndexItem := -1;
 end;
 
 procedure TfrmAtv_54.btnLimparDadosClick(Sender: TObject);
@@ -151,7 +155,7 @@ begin
    media := 0;
    lblNmRegistroV.Caption  := inttostr(contador1);
 lblMaiorIdadeV.Caption  := inttostr(idadeMais);
-lblMenorIdadeV.Caption := inttostr(idadeMenos);
+lblMenorIdadeV.Caption := '0';
 lblMediaIdadeV.Caption := FormatFloat('0.00', media);
 lblTtHomensV.Caption :=   inttostr(qtdHomens);
 lblTtMulheresV.Caption :=   inttostr(qtdMulheres);
