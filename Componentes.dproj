@@ -223,12 +223,12 @@
             <Form>frmAtv_54</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UAtividadeLogin66.pas">
-            <Form>frmAtividadelogin66</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="untAtv_55.pas">
             <Form>frmAtividade55</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividadeLogin66.pas">
+            <Form>frmAtividadelogin66</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
