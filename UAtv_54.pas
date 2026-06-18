@@ -140,7 +140,7 @@ lblNmRegistroV.Caption := inttostr(registrosContador);
 
 edtNome.Clear;
 edtIdade.Clear;
-rgpSexo.IndexItem := -1;
+rgpSexo.ItemIndex := -1;
 end;
 
 procedure TfrmAtv_54.btnLimparDadosClick(Sender: TObject);
