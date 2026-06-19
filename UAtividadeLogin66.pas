@@ -21,6 +21,8 @@ type
     procedure FormCreate(Sender: TObject);
   private
     var  user, password : string;
+    procedure AcessoNegado;
+    function AcessoLiberado : string;
   public
     { Public declarations }
   end;
@@ -31,6 +33,18 @@ var
 implementation
 
 {$R *.dfm}
+procedure TfrmAtividadelogin66.AcessoNegado;
+begin
+ Application.MessageBox(Pchar('Acesso negado às' +timetostr(now)+'.'), 'Procedure sem parâmetro', 0);
+end;
+
+function TfrmAtividadelogin66.AcessoLiberado: string;
+var mensagem: string;
+begin
+mensagem := 'Acesso liberado.';
+  Result := mensagem
+end;
+
 
 procedure TfrmAtividadelogin66.btn_acessarClick(Sender: TObject);
 var     senha, usuario: string;
@@ -41,13 +55,12 @@ begin
     senha := edt_senha.Text ;
      if ((usuario = user) and (senha = password)) then
      begin
-       ShowMessage('Acesso Liberado');
+       AcessoLiberado;
        Close;
      end
      else
      begin
-       ShowMessage('Acesso Negado');
-       edt_usuario.SetFocus;
+        AcessoNegado;
      end;
 
     edt_usuario.Clear;
@@ -87,13 +100,12 @@ begin
     senha := edt_senha.Text ;
      if ((usuario = user) and (senha = password)) then
      begin
-       ShowMessage('Acesso Liberado');
+       AcessoLiberado;
        Close;
      end
      else
      begin
-       ShowMessage('Acesso Negado');
-       edt_usuario.SetFocus;
+       AcessoNegado;
      end;
 
     edt_usuario.Clear;
