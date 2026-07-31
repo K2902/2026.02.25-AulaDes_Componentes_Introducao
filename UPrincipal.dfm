@@ -237,7 +237,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade66: TButton
     Left = 472
-    Top = 215
+    Top = 207
     Width = 161
     Height = 33
     Caption = 'AtividadeLogin66'
@@ -252,5 +252,14 @@ object frmPrincipal: TfrmPrincipal
     Caption = 'Atividade 55'
     TabOrder = 26
     OnClick = btn_atividade55Click
+  end
+  object btn_atividade00: TButton
+    Left = 472
+    Top = 264
+    Width = 150
+    Height = 34
+    Caption = 'Atividade 00'
+    TabOrder = 27
+    OnClick = btn_atividade00Click
   end
 end

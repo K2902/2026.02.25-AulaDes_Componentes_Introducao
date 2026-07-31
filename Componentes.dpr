@@ -28,7 +28,8 @@ uses
   Ucomponentes in 'Ucomponentes.pas' {frmCadastro},
   UAtv_54 in 'UAtv_54.pas' {frmAtv_54},
   untAtv_55 in 'untAtv_55.pas' {frmAtividade55},
-  UAtividadeLogin66 in 'UAtividadeLogin66.pas' {frmAtividadelogin66};
+  UAtividadeLogin66 in 'UAtividadeLogin66.pas' {frmAtividadelogin66},
+  UAtividadeAdauto in 'UAtividadeAdauto.pas' {frm_atividade00};
 
 {$R *.res}
 
@@ -63,5 +64,6 @@ begin
   Application.CreateForm(TfrmAtividadelogin66, frmAtividadelogin66);
   Application.CreateForm(TfrmAtividade55, frmAtividade55);
   Application.CreateForm(TfrmAtividadelogin66, frmAtividadelogin66);
+  Application.CreateForm(Tfrm_atividade00, frm_atividade00);
   Application.Run;
 end.
